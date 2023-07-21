@@ -1,0 +1,91 @@
+.main {
+    background: linear-gradient(180deg, #FFF 0%, #EEF1FD 100%);
+    display: flex;
+    @media (min-width: 769px){
+        height: 1122px;
+    }
+    @media (min-width: 1920px){
+        height: 770px;
+    }
+}
+
+.main__box-text {
+    order: 2;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__title {
+    text-align: center;
+    color: #243976;
+    font-size: 34px;
+}
+
+.main__title_color{
+    color: #49B3F7;
+    font-size: 34px;
+}
+
+.main__text {
+    color: #243976;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.main__subtitle {
+    text-align: center;
+    color: #243976;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.main__box-record {
+
+}
+
+.main__button-lesson {
+
+}
+
+.main__box-social {
+
+}
+
+.main__box-social span {
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 1.375px;
+    text-transform: uppercase;
+    padding: 21px 22px;
+    border-radius: 90px;
+    background: linear-gradient(315deg, #864FF1 0%, #49B3F7 100%);
+    box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
+}
+
+.main__button-twitter {
+
+}
+
+.main__button-whatsapp {
+
+}
+
+.main__background {
+    order: 1;
+    background-color: brown;
+}
+
+.main__background img{
+    display: block;
+    max-width: 100%;
+    padding: 0 20px;
+}
