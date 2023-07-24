@@ -100,14 +100,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "ALS Schlange sans";
+  src: url("ALSSchlangesans-Bold.eot");
+  src: local("ALS Schlange sans Bold"), local("ALSSchlangesans-Bold"), url("../ALSSchlangesans-Bold.eot?#iefix") format("embedded-opentype"), url("../ALSSchlangesans-Bold.woff2") format("woff2"), url("../ALSSchlangesans-Bold.woff") format("woff"), url("../ALSSchlangesans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
   font-family: Gotham Pro, sans-serif;
   font-weight: 400;
 }
 
-.header {
-  top: 0;
-}
 @media (min-width: 769px) {
   .header {
     background: #EFF2FD;
@@ -118,8 +122,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   max-width: 1180px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media (min-width: 769px) {
   .container {
@@ -157,7 +159,7 @@ body {
 .header__logo img {
   width: 120px;
   height: 34px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: 15px;
   left: 20px;
@@ -235,6 +237,7 @@ body {
 }
 
 .header__menu {
+  position: absolute;
   border-top: 1px solid #E4E5EC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +249,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0px 0px 15px 15px;
   background-color: #EFF2FD;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -257,11 +259,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 9;
+  z-index: 1;
 }
 @media (min-width: 769px) {
   .header__menu {
+    position: static;
     padding: 15px 20px 0px;
     min-height: 45px;
     -webkit-box-orient: horizontal;
@@ -415,7 +417,6 @@ body {
 }
 
 .header__burger {
-  position: fixed;
   z-index: 10;
   top: 0;
   right: 0;
@@ -459,17 +460,19 @@ body {
 }
 @media (min-width: 769px) {
   .header__box-class {
-    padding: 0 20px 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 16px;
+    height: 45px;
   }
 }
 
@@ -492,20 +495,23 @@ body {
 }
 
 .main {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEF1FD));
-  background: linear-gradient(180deg, #FFF 0%, #EEF1FD 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEF1FD));
+  background: linear-gradient(180deg, #FFF 0%, #EEF1FD 100%);
 }
 @media (min-width: 769px) {
   .main {
-    height: 1122px;
-  }
-}
-@media (min-width: 1920px) {
-  .main {
-    height: 770px;
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -514,6 +520,7 @@ body {
       -ms-flex-order: 2;
           order: 2;
   margin: 0 auto;
+  margin-top: 40px;
   overflow: hidden;
   max-width: 1180px;
   display: -webkit-box;
@@ -527,16 +534,23 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .main__title {
+  font-family: "ALS Schlange sans";
   text-align: center;
   color: #243976;
   font-size: 34px;
 }
+@media (min-width: 769px) {
+  .main__title {
+    font-size: 84px;
+    width: 682px;
+    height: 153px;
+    text-align: start;
+  }
+}
 
 .main__title_color {
   color: #49B3F7;
-  font-size: 34px;
 }
 
 .main__text {
@@ -544,36 +558,122 @@ body {
   text-align: center;
   font-size: 15px;
   line-height: 25px;
+  margin-top: 20px;
+}
+@media (min-width: 769px) {
+  .main__text {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-align: start;
+    width: 494px;
+  }
 }
 
 .main__subtitle {
+  margin-top: 10px;
   text-align: center;
   color: #243976;
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
 }
+@media (min-width: 769px) {
+  .main__subtitle {
+    text-align: start;
+  }
+}
 
-.main__box-social span {
+.main__box-record {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__button-lesson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #FFF;
-  text-align: center;
+  width: 230px;
+  height: 55px;
   font-size: 11px;
   font-weight: 700;
   line-height: 13px;
   letter-spacing: 1.375px;
   text-transform: uppercase;
-  padding: 21px 22px;
   border-radius: 90px;
   background: linear-gradient(315deg, #864FF1 0%, #49B3F7 100%);
   -webkit-box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
           box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
 }
 
+.main__box-social {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.main__box-social span {
+  color: #737373;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.main__button-twitter {
+  background: url(../img/main/telegram.svg) no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background-color: #2F89CE;
+  border-radius: 20px;
+}
+
+.main__button-whatsapp {
+  background: url(../img/main/watsapp.svg) no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background-color: #48C95F;
+  border-radius: 20px;
+}
+
 .main__background {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  background-color: brown;
+}
+@media (min-width: 769px) {
+  .main__background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
 }
 
 .main__background img {

@@ -1,33 +1,45 @@
 .main {
-    background: linear-gradient(180deg, #FFF 0%, #EEF1FD 100%);
     display: flex;
+    flex-direction:column;
+    background: linear-gradient(180deg, #FFF 0%, #EEF1FD 100%);
     @media (min-width: 769px){
-        height: 1122px;
-    }
-    @media (min-width: 1920px){
-        height: 770px;
+        position: relative;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 .main__box-text {
     order: 2;
     margin: 0 auto;
+    margin-top: 40px;
     overflow: hidden;
     max-width: 1180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (min-width: 769px){
+
+    }
 }
 
 .main__title {
+    font-family: 'ALS Schlange sans';
     text-align: center;
     color: #243976;
     font-size: 34px;
+    @media (min-width: 769px){
+        font-size: 84px;
+        width: 682px;
+        height: 153px;
+        text-align: start;
+    }
 }
 
-.main__title_color{
+.main__title_color {
     color: #49B3F7;
-    font-size: 34px;
 }
 
 .main__text {
@@ -35,53 +47,92 @@
     text-align: center;
     font-size: 15px;
     line-height: 25px;
+    margin-top: 20px;
+    @media (min-width: 769px){
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 40px;
+        text-align: start;
+        width: 494px;
+    }
 }
 
 .main__subtitle {
+    margin-top: 10px;
     text-align: center;
     color: #243976;
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
+    @media (min-width: 769px){
+        text-align: start;
+    }
 }
 
 .main__box-record {
-
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__button-lesson {
-
-}
-
-.main__box-social {
-
-}
-
-.main__box-social span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFF;
-    text-align: center;
+    width: 230px;
+    height: 55px;
     font-size: 11px;
     font-weight: 700;
     line-height: 13px;
     letter-spacing: 1.375px;
     text-transform: uppercase;
-    padding: 21px 22px;
     border-radius: 90px;
     background: linear-gradient(315deg, #864FF1 0%, #49B3F7 100%);
     box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
 }
 
-.main__button-twitter {
+.main__box-social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+}
 
+.main__box-social span {
+    color: #737373;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.main__button-twitter {
+    background: url(../img/main/telegram.svg) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-color: #2F89CE;
+    border-radius: 20px;
 }
 
 .main__button-whatsapp {
-
+    background: url(../img/main/watsapp.svg) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-color: #48C95F;
+    border-radius: 20px;
 }
 
 .main__background {
     order: 1;
-    background-color: brown;
+    @media (min-width: 769px){
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        order: unset;
+    }
 }
 
 .main__background img{

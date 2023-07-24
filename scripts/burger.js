@@ -9,10 +9,13 @@ function toggleMenu() {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
+    menu.style.borderRadius = "none";
+    
   } else {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
+    menu.style.borderRadius = "0px 0px 15px 15px";
   }
 }
 

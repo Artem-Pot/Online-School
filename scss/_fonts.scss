@@ -42,3 +42,15 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'ALS Schlange sans';
+    src: url('ALSSchlangesans-Bold.eot');
+    src: local('ALS Schlange sans Bold'), local('ALSSchlangesans-Bold'),
+        url('../ALSSchlangesans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../ALSSchlangesans-Bold.woff2') format('woff2'),
+        url('../ALSSchlangesans-Bold.woff') format('woff'),
+        url('../ALSSchlangesans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
