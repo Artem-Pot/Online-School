@@ -187,10 +187,9 @@
     color: #243976;
     font-weight: 500;
     &:hover {
-        background-color: #b3bbdb;
+        text-decoration: underline;
         @media (min-width: 769px) {
-            background-color:unset;
-            text-decoration:underline;
+            background-color: unset;
         }
     }
     @media (min-width: 769px){
@@ -207,9 +206,7 @@
     line-height: 1.18;
     padding-bottom: 30px;
     &:hover {
-        @media (min-width: 769px) {
-            text-decoration: underline;
-        }
+        text-decoration: underline;
     }
     &::before {
         @media (min-width: 769px) {
@@ -236,6 +233,8 @@
 
 .header__telephone_burger {
     padding-bottom: 73px;
+    font-size: 20px;
+    line-height: 24px;
     @media (min-width: 769px){
         display: none;
     }
@@ -260,6 +259,10 @@
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
+    &:hover {
+        transform: scale(1.05, 1.05);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .header__burger-close {
@@ -272,6 +275,10 @@
     height: 40px;
     background-size: 40px 40px;
     display: none;
+    &:hover {
+        transform: scale(1.05, 1.05);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .showMenu {

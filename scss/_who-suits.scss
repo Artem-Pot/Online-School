@@ -1,0 +1,117 @@
+.who-suits {
+    margin-top: 40px;
+}
+
+.who-suits__container {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.who-suits__box-suits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-h2 {
+    color: #243976;
+    text-align: center;
+    font-family: ALSSchlangesans-Bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.who-suits__wrapper-suits {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.who-suits__ico-suits {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 27px;
+}
+
+.who-suits__text {
+    color: #243976;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.who-suits__ico {
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.who-suits__ico_knowledge {
+    background: url(../img/who-suits/1.svg) no-repeat center center;
+}
+
+.who-suits__ico_traveler {
+    background: url(../img/who-suits/2.svg) no-repeat center center;
+}
+
+.who-suits__ico_family {
+    background: url(../img/who-suits/3.svg) no-repeat center center;
+}
+
+.who-suits__ico_athlete {
+    background: url(../img/who-suits/4.svg) no-repeat center center;
+}
+
+.who-suits__ico_foreigner {
+    background: url(../img/who-suits/5.svg) no-repeat center center;
+}
+
+.who-suits__price {
+    margin-top: 50px;
+    border-radius: 25px;
+    background: #EFF2FD;
+}
+
+.who-suits__wrapper-price {
+    
+
+}
+
+.who-suits__title-h3 {
+    color: #243976;
+    font-family: ALSSchlangesans-Bold;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.who-description {
+    color: #243976;
+    font-size: 14px;
+    line-height: 18px; 
+}
+
+.main__box-record {
+
+}
+
+.main__button-record {
+
+}
+
+.main__box-social {
+
+}
+
+.main__button-twitter {
+
+}
+
+.main__button-whatsapp {
+
+}
