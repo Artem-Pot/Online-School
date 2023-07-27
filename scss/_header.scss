@@ -1,14 +1,12 @@
 .header {
-    // @media (min-width: 769px){
-    //     background: #EFF2FD;
-    // }
+    background: #fff;
 }
 
 .container {
     margin: 0 auto;
     overflow: hidden;
     max-width: 1180px;
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         filter: none;
     }
 }
@@ -18,8 +16,7 @@
     padding-right: 20px;
     padding-top: 15px;
     height: 75px;
-    // background: #EFF2FD;
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         padding-bottom: 9px;
         padding-left: 40px;
         padding-right: 40px;
@@ -41,12 +38,12 @@
     top: 15px;
     left: 20px;
     &:hover {
-        @media (min-width: 769px){
+        @media (min-width: 768px){
             transform: scale(0.95,0.95);
             transition: all 0.3s ease-in-out;
         }
     }
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         width: 170px;
         height: 48px;
         position: static;
@@ -59,7 +56,7 @@
 }
 
 .header__box-connection {
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,7 +70,7 @@
         transform: scale(1.02, 1.02);
         transition: all 0.1s ease-in-out;
     }
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         display: block;
     }
 }
@@ -82,7 +79,7 @@
     color: #243976;
     font-weight: 500;
     line-height: 1.18;
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         font-size: 16px;
     }
     @media (min-width: 1000px){
@@ -93,29 +90,31 @@
     }
 }
 
-.header__button-record {
+.button__record {
+    border-radius: 90px;
+    background:  linear-gradient(315deg, #864FF1 0%, #49B3F7 100%);
+    box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 1.375px;
+    text-transform: uppercase;
     &:hover {
-        @media (min-width: 769px){
-            background:  linear-gradient(315deg, #5f1ae7 0%, #189bec 100%);
-            transform: scale(1.02, 1.02);
-            transition: all 0.3s ease-in-out;
-        }
+        background: linear-gradient(315deg, #5f1ae7 0%, #189bec 100%);
+        transform: scale(1.02, 1.02);
+        transition: all 0.3s ease-in-out;
     }
-    @media (max-width: 768px){
+    @media (max-width: 767px){
         display: none;
     }
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         width: 210px;
         height: 50px;
-        border-radius: 90px;
-        background:  linear-gradient(315deg, #864FF1 0%, #49B3F7 100%);
-        box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
-        color: #FFF;
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 13px;
-        letter-spacing: 1.375px;
-        text-transform: uppercase;
+    }
+    @media (min-width: 1920px){
+        width: 222px;
+        height: 57px;
     }
 }
 
@@ -132,8 +131,8 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    @media (min-width: 769px){
+    z-index: 2;
+    @media (min-width: 768px){
         background-color: unset;
         position: static;
         padding: 15px 40px 0px;
@@ -152,7 +151,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 45px;
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         flex-direction: row;
         align-items: center;
         padding-top: 0;
@@ -170,11 +169,11 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 25px;
-        @media (min-width: 769px){
+        @media (min-width: 768px){
             margin-bottom: 0;
         }
     }
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         line-height: 16px;
         height: 100%;
     }
@@ -184,8 +183,8 @@
     display: block;
     align-items: center;
     text-align: center;
-    color: #243976;
     font-weight: 500;
+    color: #243976;
     &:hover {
         text-decoration: underline;
         @media (min-width: 769px) {
@@ -197,7 +196,6 @@
         display: inline;
     }
 }
-
 
 .header__button-user {
     color: #243976;

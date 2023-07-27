@@ -1,5 +1,6 @@
 .who-suits {
     margin-top: 40px;
+    background: #fff;
 }
 
 .who-suits__container {
@@ -17,12 +18,10 @@
 }
 
 .title-h2 {
-    color: #243976;
     text-align: center;
-    font-family: ALSSchlangesans-Bold;
+    font-family: 'ALS Schlange sans';
     font-size: 28px;
     font-style: normal;
-    font-weight: 400;
     line-height: 29px;
 }
 
@@ -32,19 +31,44 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+    @media (min-width: 768px){
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1000px){
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
 }
 
 .who-suits__ico-suits {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 27px;
+    gap: 30px;
+    @media (min-width: 415px){
+        justify-content: center;
+        gap: 27px;
+    }
+    @media (min-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        width: 229px;
+    }
+    @media (min-width: 1000px){
+        max-width: 180px;
+    }
 }
 
 .who-suits__text {
-    color: #243976;
     line-height: 24px;
     font-size: 16px;
+    @media (min-width: 768px){
+        text-align: center;
+    }
 }
 
 .who-suits__ico {
@@ -76,42 +100,125 @@
     margin-top: 50px;
     border-radius: 25px;
     background: #EFF2FD;
+    padding: 30px 30px 0px;
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 0px;
+    }
+    @media (min-width: 1000px){
+        padding: 0;
+        margin-top: 86px;
+        flex-direction:row !important;
+        padding-left: 262px;
+        gap: 22px;
+    }
 }
 
 .who-suits__wrapper-price {
-    
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 415px){
+        display: grid;
+        grid-template-areas:    "img title-h3"
+                                "img description";
+        gap: 15px;
+    }
+    @media (min-width: 768px){
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding-left: 224px;
+    }
+    @media (min-width: 1000px){
+        padding-left: 0;
+    }
+    @media (min-width: 1960px){
+        padding-left: 20px;
+        max-width: 524px;
+    }
 }
 
 .who-suits__title-h3 {
-    color: #243976;
-    font-family: ALSSchlangesans-Bold;
+    font-family: 'ALS Schlange sans';
     font-size: 20px;
     line-height: 21px;
+    text-align: center;
+    @media (min-width: 415px){
+        line-height: 24px;
+        font-size: 24px;
+        grid-area: title-h3;
+        text-align: left;
+        padding-top: 20px;
+    }
+    @media (min-width: 768px){
+        padding-top: 0;
+    }
 }
 
 .who-description {
-    color: #243976;
     font-size: 14px;
     line-height: 18px; 
+    margin-top: 20px;
+    text-align: center;
+    @media (min-width: 415px){
+        text-align: left;
+        font-size: 16px;
+        grid-area: description;
+        padding-bottom: 20px;
+    }
+    @media (min-width: 768px){
+        font-size: 14px;
+        margin-top: 0;
+    }
+    @media (min-width: 1000px){
+        padding-bottom: 0;
+    }
 }
 
-.main__box-record {
-
+.who-suits__price {
+    @media (min-width: 768px){
+        position: relative;
+        height: 255px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: 1000px){
+        height: 158px;
+    }
 }
 
-.main__button-record {
-
+.who-suits__wrapper-price img {
+    margin-top: 15px;
+    @media (min-width: 415px){
+        width: 87px;
+        grid-area: img;
+    }
+    @media (min-width: 768px){
+        width: 168px;
+        position:absolute;
+        bottom: 18px;
+        left:  23px;
+    }
+    @media (min-width: 1000px){
+        width: 132px;
+        bottom: 15px;
+    }
 }
 
-.main__box-social {
-
-}
-
-.main__button-twitter {
-
-}
-
-.main__button-whatsapp {
-
+.box-record_who-suits {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1000px){
+        padding-right: 20px;
+    }
+    @media (min-width: 1960px){
+        margin-left: auto;
+        padding-right: 0;
+    }
 }
