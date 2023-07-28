@@ -140,7 +140,7 @@
     }
 }
 
-.who-suits__title-h3 {
+.title-h3 {
     font-family: 'ALS Schlange sans';
     font-size: 20px;
     line-height: 21px;
@@ -148,6 +148,14 @@
     @media (min-width: 415px){
         line-height: 24px;
         font-size: 24px;
+        grid-area: title-h3;
+        text-align: left;
+        padding-top: 0;
+    }
+}
+
+.title-h3_who-suits {
+    @media (min-width: 415px){
         grid-area: title-h3;
         text-align: left;
         padding-top: 20px;
@@ -214,6 +222,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: 768px){
+        margin-top: 0;
+    }
     @media (min-width: 1000px){
         padding-right: 20px;
     }

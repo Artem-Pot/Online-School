@@ -5,8 +5,10 @@ body {
     font-family: Gotham Pro, sans-serif;
     font-weight: 400;
     color: #243976;
+    background-color: #fff
 }
 
 @import 'header';
 @import 'main';
 @import 'who-suits';
+@import 'lessons';
