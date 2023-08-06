@@ -1,0 +1,73 @@
+.comparison {
+    padding: 50px 0;
+    @media (min-width: 480px){
+        padding: 70px 0;
+    }
+    @media (min-width: 768px){
+        padding: 80px 0;
+    }
+}
+
+.comparison__container {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-h2_comparison {
+    margin-bottom: 30px;
+}
+
+.comparison__box {
+
+}
+
+.comparison__img-left {
+    display: none;
+}
+
+.comparison__school {
+
+}
+.comparison__usual {
+    border-radius: 15px;
+    background: linear-gradient(180deg, 
+    #EFF2FD 0%, #FCFCFC 100%);
+    padding: 20px 13px 13px 22px;
+}
+
+.title-h3_comparison {
+
+}
+
+.comparison__list {
+
+}
+
+.comparison__item {
+
+}
+
+.comparison__text {
+
+}
+
+.comparison__desc {
+
+}
+
+.comparison__online {
+    border-radius: 15px;
+    background: var(--5, linear-gradient(356deg, 
+    #4271DF 0%, #789CF1 100%));
+    padding: 25px 13px 13px 16px;
+}
+
+.comparison__img-right {
+    display: none;
+}

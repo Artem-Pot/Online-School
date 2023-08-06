@@ -23,6 +23,18 @@
     font-size: 28px;
     font-style: normal;
     line-height: 29px;
+    @media (min-width: 415px){
+        font-size: 34px;
+    }
+    @media (min-width: 768px){
+        font-size: 38px;
+    }
+    @media (min-width: 1000px){
+        font-size: 40px;
+    }
+    @media (min-width: 1920x){
+        font-size: 50px;
+    }
 }
 
 .who-suits__wrapper-suits {

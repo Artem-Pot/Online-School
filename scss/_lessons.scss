@@ -1,5 +1,12 @@
 .lessons {
     margin-top: 50px;
+    margin-bottom: 50px;
+    @media (min-width: 480px){
+        margin-bottom: 70px;
+    }
+    @media (min-width: 480px){
+        margin-bottom: 80px;
+    }
 }
 
 .lessons__container {
@@ -13,7 +20,7 @@
     align-items: center;
 }
 
-.title-h2__lessons {
+.title-h2_lessons {
     margin-bottom: 30px;
     @media (min-width: 768px){
         margin-bottom: 40px;
