@@ -1,4 +1,4 @@
-//скрипт для раздела - Дети любят уроки потому что
+// скрипт для раздела - Дети любят уроки потому что
 const favoriteRadioOne = document.querySelector("#favorite__radio_one");
 const favoriteRadioOne2 = document.querySelector("#favorite__radio_two");
 const favoriteRadioOne3 = document.querySelector("#favorite__radio_three");
