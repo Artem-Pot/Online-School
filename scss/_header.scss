@@ -37,6 +37,7 @@
     z-index: 10;
     top: 15px;
     left: 20px;
+    transition: all 0.3s ease-in-out;
     &:hover {
         @media (min-width: 768px){
             transform: scale(0.95,0.95);
@@ -66,6 +67,7 @@
 
 .header__telephone_list {
     display: none;
+    transition: all 0.3s ease-in-out;
     &:hover {
         transform: scale(1.02, 1.02);
         transition: all 0.1s ease-in-out;
@@ -100,6 +102,7 @@
     line-height: 13px;
     letter-spacing: 1.375px;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
     &:hover {
         background: linear-gradient(315deg, #5f1ae7 0%, #189bec 100%);
         transform: scale(1.02, 1.02);
@@ -117,7 +120,6 @@
         height: 57px;
     }
 }
-
 //нижнее меню
 .header__menu {
     position: absolute;
@@ -237,7 +239,6 @@
         display: none;
     }
 }
-
 //бургер меню начало
 .header__burger {
     z-index: 10;
@@ -273,6 +274,7 @@
     height: 40px;
     background-size: 40px 40px;
     display: none;
+    transition: all 0.3s ease-in-out;
     &:hover {
         transform: scale(1.05, 1.05);
         transition: all 0.3s ease-in-out;
@@ -308,6 +310,7 @@
     border-radius: 15px;
     background: linear-gradient(356deg, #4271DF 0%, #789CF1 100%);
     padding: 8px 25px;
+    transition: all 0.3s ease-in-out;
     &:hover {
         transform: scale(1.05, 1.05);
         transition: all 0.3s ease-in-out;
