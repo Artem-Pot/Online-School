@@ -25,6 +25,19 @@
     align-items: center;
     gap: 88px;
     padding-bottom: 10px;
+    @media (min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 68px;
+    }
+    @media (min-width: 1000px){
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+    @media (min-width: 1920px){
+        gap: 97px;
+    }
 }
 
 .price__class {
@@ -35,6 +48,15 @@
     position: relative;
     z-index: 2;
     max-width: 280px;
+    @media (min-width: 415px){
+        max-width: 293px;
+    }
+    @media (min-width: 480px){
+        max-width: 310px;
+    }
+    @media (min-width: 1920px){
+        max-width: 293px;
+    }
     & img {
         position: absolute;
         bottom: 0;
@@ -61,6 +83,18 @@
     top: -27px;
     right: 10px;
     transition: all 0.3s ease-in-out;
+    @media (min-width: 415px){
+        font-size: 32px;
+        line-height: 45px;
+        width: 220px;
+        height: 80px;
+    }
+    @media (min-width: 1920px){
+        width: 251px;
+        height: 100px;
+        font-size: 36px;
+        line-height: 50px;
+    }
     & span {
         color: #E9E8FA;
         font-size: 14px;
@@ -85,9 +119,15 @@
 }
 
 .title-h3_price {
+    font-weight: 500;
     padding-top: 40px;
     padding-bottom: 10px;
     text-align: left;
+    @media (min-width: 415px){
+        font-size: 17px;
+        line-height: 1;
+        padding-top: 50px;
+    }
 }
 
 .price__description {
@@ -109,6 +149,7 @@
     min-height: 32px;
     display: flex;
     align-items: center;
+    font-size: 14px;
     &::before {
         content: '';
         position: absolute;
