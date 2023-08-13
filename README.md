@@ -2,7 +2,7 @@
 
 <ul>
     <li> Сайт по шаблону, взятого из Figma</li>
-    <li> В проекте используются технологии: <b>HTML, CSS, JS, Node JS, MySQL, SCSS, Pug</b></li>
+    <li> В проекте используются технологии: <b>HTML, CSS, JS, SCSS, Pug</b></li>
     <li> В проекте используются программы: VS code, Figma Desktop, GitHub Desktop, Prepros для Pug/SCSS</li>
     <li> В проекте будет учтена семантика, оформление по методологии БЭМ, адаптивность и кроссбраузерность.</li>
 </ul>
