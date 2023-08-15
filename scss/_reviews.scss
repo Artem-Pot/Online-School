@@ -2,25 +2,78 @@
     padding-bottom: 30px;
 }
 .carousel__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-
+    @media (min-width: 415px){
+        gap: 65px;
+    }
+    @media (min-width: 480px){
+        gap: 60px;
+    }
+    @media (min-width: 768px){
+        gap: 120px;
+    }
+    @media (min-width: 1920px){
+        gap: 198px;
+    }
+    & img {
+            display: none;
+        @media (min-width: 415px){
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 120px;
+            background: url(../img/carousel/figure.svg) no-repeat center center;
+            width: 302px;
+            height: 256px; 
+        }
+        @media (min-width: 480px){
+            width: 344px;
+            height: 292px; 
+        }
+        @media (min-width: 768px){
+            width: 528px;
+            height: 450px;
+        }
+        @media (min-width: 1000px){
+            width: 572px;
+            height: 487px;
+        }
+        @media (min-width: 1920px){
+            width: 645px;
+            height: 549px;
+        }
+    }
 }
 // Карусель - слайдер
-.items {
+.carousel__items {
     position: relative;
     width: 100%;
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // overflow: hidden;
+    height: 277px;
+
+    @media (min-width: 415px){
+        padding-bottom: 65px;
+    }
+    @media (min-width: 480px){
+        height: 207px;
+    }
+    @media (min-width: 768px){
+        height: 272px;
+    }
+    @media (min-width: 1000px){
+        flex-direction: row;
+        overflow: hidden;
+    }
 }
 
-.item {
+.carousel__item {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -30,7 +83,6 @@
     border-radius: 20px;
     border: 5px solid #4C75A3;
     background: #FFF;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -41,22 +93,22 @@
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
-    @media (min-width: 768px){
-        width: calc(100% - 150px);
+    @media (min-width: 415px){
+        height: 100%;
+        flex-direction: row;
     }
-    @media (min-width: 768px){
+    @media (min-width: 1000px){
         width: 617px;
         height: 272px;
     }
 }
 
-.active {
+.carousel__active {
     opacity: 1;
     z-index: 99;
-    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
 
-.prev {
+.carousel__prev {
     z-index: 2;
     opacity: 1;
     @media (min-width: 1000px){
@@ -64,7 +116,7 @@
     }
 }
 
-.next {
+.carousel__next {
     z-index: 2;
     opacity: 1;
     @media (min-width: 1000px){
@@ -81,13 +133,30 @@
     padding-left: 50px;
     width: 100%;
     height: auto;
+    @media (min-width: 415px){
+        min-width: 111px;
+        padding-left: 0;
+        padding-top: 20px;
+    }
     &::before {
         content: "";
         position: absolute;
         background: url(../img/carousel/vk.svg) no-repeat center center;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
         left: 0;
+        @media (min-width: 415px){
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            top: -5px;
+        }
+        @media (min-width: 768px){
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+        }
     }
 }
 
@@ -97,27 +166,82 @@
         background: url(../img/carousel/instagram.svg) no-repeat center center;
         width: 40px;
         height: 40px;
+        @media (min-width: 415px){
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+        }
+        @media (min-width: 768px){
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+        }
+    }
+}
+
+.title-h3_carousel {
+    @media (min-width: 415px){
+        font-size: 16px;
+    }
+    @media (min-width: 480px){
+        font-size: 18px;
+    }
+    @media (min-width: 768px){
+        font-size: 26px;
     }
 }
 
 .carousel__subtitle {
     font-size: 14px;
+    @media (min-width: 415px){
+        font-size: 11px;
+    }
+    @media (min-width: 480px){
+        font-size: 12px;
+    }
+    @media (min-width: 768px){
+        font-size: 18px; 
+    }
 }
 
 .carousel__link {
-
-font-size: 14px;
-line-height: 18px; 
+    font-size: 14px;
+    line-height: 18px; 
+    @media (min-width: 415px){
+        font-size: 10px;
+        line-height: 13px; 
+    }
+    @media (min-width: 480px){
+        font-size: 12px;
+        line-height: 16px; 
+    }
+    @media (min-width: 768px){
+        font-size: 16px;
+        line-height: 21px; 
+    }
 }
 
 .carousel__text {
     color: #243976;
     font-size: 12px;
     line-height: 16px;
+    @media (min-width: 415px){
+        font-size: 9px;
+        line-height: 14px;
+        max-width: 100%;
+    }
+    @media (min-width: 480px){
+        font-size: 12px;
+        line-height: 18px;
+    }
+    @media (min-width: 768px){
+        font-size: 16px;
+        line-height: 21px;
+    }
 }
 
 //Кнопки слайдера
-.button-container {
+.carousel__button-container {
     width: 130px;
     height: 50px;
     display: flex;
@@ -128,18 +252,20 @@ line-height: 18px;
     }
 }
 
-.button {
+.carousel__button {
     cursor: pointer;
     width: 50px;
     height: 50px;
+    background-size: 50px;
     transition: all 300ms ease-in-out;
     background: url(../img/carousel/arrow.svg) no-repeat center center;
     @media (min-width: 768px){
         width: 69px;
         height: 69px;
+        background-size: 69px;
     }
 }
 
-.button_right {
+.carousel__button_right {
     transform: rotate(-180deg);
 }
